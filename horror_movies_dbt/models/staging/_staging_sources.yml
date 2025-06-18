@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: horror_movies_source
+    database: movies_db 
+    schema: main
+    tables:
+      - name: horror_movies_raw

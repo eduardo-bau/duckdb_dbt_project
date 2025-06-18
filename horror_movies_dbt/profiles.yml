@@ -1,0 +1,8 @@
+horro_movies_dbt:
+  
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'movies_db.duckdb'
+      threads: 1
