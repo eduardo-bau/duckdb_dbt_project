@@ -1,11 +1,11 @@
 with collection as (
     select *
-    from {{ref('stg_movies')}}
-)
+    from {{ref('stg_seed__horror_movies')}}
+),
 
-,languages as (
+languages as (
     SELECT distinct
-        {{ dbt_utils.generate_surrogate_key(['genre']) }} as language_id,
+        {{ dbt_utils.generate_surrogate_key(['original_language']) }} as language_id
         ,original_language as language
     FROM collection
 )

@@ -1,5 +1,5 @@
 with movies as (
-    select * from {{ref('stg_movies')}}
+    select * from {{ref('stg_seed__horror_movies')}}
 )
 
 ,master_intermediate as (

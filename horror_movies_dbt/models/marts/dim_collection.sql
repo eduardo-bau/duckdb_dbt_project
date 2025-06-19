@@ -1,6 +1,6 @@
 with collection as (
     select *
-    from {{ref('stg_movies')}}
+    from {{ref('stg_seed__horror_movies')}}
 )
 
 ,distinct_collection as (

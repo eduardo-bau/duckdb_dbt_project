@@ -1,5 +1,5 @@
 with source as (
-    select * from {{ ref('stg_movies') }}
+    select * from {{ ref('stg_seed__horror_movies') }}
 )
 
 ,genre as (

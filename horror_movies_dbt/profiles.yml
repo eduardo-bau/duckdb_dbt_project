@@ -1,4 +1,4 @@
-horro_movies_dbt:
+horror_movies_dbt:
   
   target: dev
   outputs:
