@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: dim_collection
+    columns:
+      - name: collection_id
+        tests:
+          - unique
+          - not_null
+  - name: dim_genres
+    columns:
+      - name: genre_id
+        tests:
+          - unique
+          - not_null
+  - name: dim_languages
+    columns:
+      - name: language_id
+        tests:
+          - unique
+          - not_null
+  - name: fact_movies
+    columns:
+      - name: language_id
+        tests:
+          - unique
+          - not_null

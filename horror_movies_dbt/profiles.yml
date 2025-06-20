@@ -5,4 +5,4 @@ horror_movies_dbt:
     dev:
       type: duckdb
       path: 'movies_db.duckdb'
-      threads: 1
+      threads: 5

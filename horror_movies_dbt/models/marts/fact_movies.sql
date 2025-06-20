@@ -2,19 +2,19 @@ with movies as (
     select * from {{ref('stg_seed__horror_movies')}}
 )
 
-,master_intermediate as (
+,final as (
     select movie_id
         ,title
-        ,release_date
+        ,released_date
         ,popularity
         ,vote_count
         ,vote_average
-        ,budget
-        ,revenue
+        ,budget_in_dollars
+        ,revenue_in_dollars
         ,runtime
-        ,genre_id (FK opcional si lo normalizas)
-        ,collection_id (FK opcional si lo normalizas)
-        ,is_adult (boolean)
+        ,genre_names
+        ,collection
+        ,is_adult
     from movies
 )
 

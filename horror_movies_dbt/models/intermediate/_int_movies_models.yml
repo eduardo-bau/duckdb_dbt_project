@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: int_movies_genres
+    columns:
+      - name: movie_id
+        tests:
+          - unique
+          - not_null
+      - name: genre_id
+        tests:
+          - unique
+          - not_null
