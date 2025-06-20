@@ -4,7 +4,7 @@ with collection as (
 )
 
 ,distinct_collection as (
-    select
+    select distinct
         collection as collection_id
         ,collection_name
     from collection

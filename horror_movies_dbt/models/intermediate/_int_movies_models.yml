@@ -5,9 +5,7 @@ models:
     columns:
       - name: movie_id
         tests:
-          - unique
           - not_null
       - name: genre_id
         tests:
-          - unique
           - not_null

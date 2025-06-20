@@ -11,7 +11,7 @@ movies_with_genres as (
 ),
 
 join_movies_id as (
-    select
+    select distinct
         mwg.movie_id as movie_id
         ,dg.genre_id as genre_id
     from movies_with_genres mwg
