@@ -11,14 +11,21 @@ This is one of my first projects using dbt (data build tool) and DuckDB. In this
 Open a terminal in the project root and run:
 
 ```bash
-python -m venv project-env
+python -m venv .venv
 ```
 
 Activate the environment:
 - **Windows:**
   ```bash
-  project-env\Scripts\activate
+  .venv\Scripts\activate
   ```
+
+Activate the environment:
+- **Linux**
+  ```bash
+  source .venv/bin/activate
+  ```
+
 
 ### 2. Install Required Python Packages
 
@@ -30,9 +37,10 @@ pip install dbt-core dbt-duckdb
 
 ### 3. Prepare the Database (Optional)
 
-If you need to (re)create the DuckDB database from the CSV, run:
+In order to create the main database, run:
 
 ```bash
+cd horror_movies_dbt
 python ingestion.py
 ```
 
